@@ -1,0 +1,309 @@
+/* Root - fonts et al */
+
+@font-face {
+    font-family: "Ginto Nord";
+    src: url(assets/Fonts/GintoNord-Medium.woff);
+}
+
+@font-face {
+    font-family: "Ginto Nord Black";
+    src: url(assets/Fonts/GintoNord-Black.woff);
+}
+
+@font-face {
+    font-family: "Ginto Nord Ultra";
+    src: url(assets/Fonts/ABCGintoNord-Ultra.woff);
+}
+
+@font-face {
+    font-family: "Whitney";
+    src: url(assets/Fonts/Whitney-Book-Bas.woff);
+}
+
+@font-face {
+    font-family: "Whitney Ital";
+    src: url(assets/Fonts/Whitney-BookItal-Bas.woff);
+}
+
+@font-face {
+    font-family: "Whitney Bold";
+    src: url(assets/Fonts/Whitney-Semibold-Bas.woff);
+}
+
+* {
+    list-style: none;
+    margin: 0%;
+
+    --font-primary: "Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+    --font-display: "Ginto Nord","Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+    --font-headline: "Ginto Nord Black","Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+    --brand: #5865f2;
+    --brand-gradient: linear-gradient(90deg,#8ea1e1,#7289da);
+    --greyple: #99aab5;
+    --dark-not-black: #2c2f33;
+    --focus-border: #00b0f4;
+    --status-green: #43b581;
+    --text-link: #00b0f4;
+    --off-white: #f6f6f6;
+    --white: #fff;
+    --not-quite-black: #23272a;
+    --not-quite-black-rgb: 35,39,42;
+    --black: #000;
+    --ekko-red: #de2761;
+
+}
+
+body {
+    padding: 0%;
+}
+
+/* Header & nav */
+
+nav {
+    background-color: #404eed;
+    padding: 2em 5em 3em 5em;
+    font-family:"Whitney Bold";
+}
+
+nav ul {
+    display: flex;
+    flex-basis: column nowrap;
+    justify-items: center;
+    align-content: center;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav li {
+    color: white;
+    align-self: center;
+    flex-grow: 1;
+}
+
+.navcolumn {
+    flex: 33%;
+}
+
+.leftcolumn {
+    align-self: left;
+}
+
+.rightcolumn {
+    align-self: right;
+}
+
+/* Hero */
+
+header {
+    min-height: 70vh;
+    background-color: #404eed;
+    color: white;
+    display: block;
+    text-align: center;
+    flex-basis: row nowrap;
+    
+    background-image: url(assets/coolshoe.svg),
+        url(assets/drinkingatthebar.svg),
+        url(assets/stars.svg);
+    background-repeat: no-repeat,
+        no-repeat, 
+        no-repeat;
+    background-position: -25% 100%,
+    125% 100%,
+    center;
+}
+
+header p {
+    padding: 0em 18em 1em 18em;
+    font-size: clamp(16px,2vw,20px);
+    line-height: 1.625;
+}
+
+h1 {
+    font-family: var(--font-headline);
+    font-size: 3em;
+    padding: 1em 1em;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h2 {
+    text-align: center;
+    font-size: 4em;
+    margin-top: 40px;
+}
+
+.bigherotext {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    max-width: 75vw;
+}
+
+.bigheroheader {
+    font-family: "Ginto Nord Black";
+}
+
+/* Sections & Articles */
+
+h2 {
+    font-family: "Whitney Bold";
+    line-height: 120%;
+    font-size: clamp(20px,4vw,48px);
+}
+
+.lightsection {
+    background-color: white;
+    text-justify: right;
+    padding: 5em 10em;
+}
+
+.greysection {
+    background-color: whitesmoke;
+    text-justify: left;
+    padding: 5em 10em;
+}
+
+.bottomsection {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 0em 0em 10em 0em;
+}
+
+p {
+    font-family: var(--font-primary);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+section .row {
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.leftrow {
+    display: flex;
+    justify-content: left;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+}
+
+.bigcolumn {
+    flex: 67%;
+    padding: 10px;
+}
+
+.smallcolumn {
+    flex: 33%;
+    padding: 10px;
+}
+
+/* Footer & Bottom Matter */
+
+footer {
+    background-color: #23272a;
+    font-family: var(--font-primary);
+    color: white;
+    padding: 1em 4em;
+    line-height: 2;
+}
+
+footer h2 {
+    color: var(--brand);
+    font-size: 2em;
+    font-family: "Ginto Nord Black";
+}
+
+
+footer li {
+    color: white;
+}
+
+.footerbottom {
+    display: flex;
+    flex-basis: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+/* Buttons & Links */
+
+button {
+    border-radius: 16px;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    font-family: var(--font-primary);
+    border: none;
+}
+
+.darkbutton {
+    background-color: var(--not-quite-black);
+    color: white;
+}
+
+.largebutton {
+    padding: 1rem 3.2rem;
+    border-radius: 2.8rem;
+    font-size: 1.5rem;
+}
+
+.smallbutton {
+    padding: 0.5rem 0.8rem;
+    border-radius: 2rem;
+}
+
+.purplebutton {
+    background-color: #444da7;
+    color: white;
+}
+
+hr {
+    border-color: #444da7;
+    size: 2px;
+}
+
+a {
+    text-decoration: none;   
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.icon {
+    max-height: 24px;
+}
+
+.logo {
+    max-height: 24px;
+}
+
+.stars {
+    background-image: url(assets/stars.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45%;
+}
+
+/* Text Manip/Etc */
+
+.blurple {
+    color: #444da7;
+}

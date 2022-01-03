@@ -1,0 +1,130 @@
+/* Fonts et al */
+
+* {
+    list-style: none;
+    --font-primary: "Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+    --font-display: "Ginto Normal","Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+    --font-headline: "Ginto Nord","Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+    --font-monospace: "Menlo","Consolas","Monaco",monospace;
+    --font-glitch: "ArchivoBlack","Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+    --font-cursive: "Reenie Beanie","Comic Sans MS",cursive,sans-serif;
+
+    margin: 0% 0% 0% 0%;
+}
+
+/* Header and Title */
+
+header {
+    background-color: #404eed;
+    display: flex;
+    flex-basis: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+header ul {
+    display: flex;
+    flex-basis: column nowrap;
+    justify-content: space-around;
+}
+
+header li {
+    display:inline;
+    color: white;
+}
+
+.bigherobanner {
+    min-height: 70vh;
+    background-color: #404eed;
+    color: white;
+    background-image: url(assets/coolshoe.svg),
+        url(assets/drinkingatthebar.svg);
+    background-repeat: no-repeat,
+        no-repeat;
+    background-position: -30% 100%,
+    130% 100%;
+}
+
+
+.bigherobanner button {
+    max-width: 25vw;
+    font-size: 1.5em;
+}
+
+.bigheroheader {
+    font-family: var(--font-headline);
+    text-align: center;
+    font-size: 4em;
+}
+
+.bigherotext {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    max-width: 75vw;
+}
+
+h2 {
+    font-family: var(--font-headline);
+}
+
+/* Sections */
+
+
+.lightsection {
+    background-color: white;
+    text-justify: right;
+}
+
+.greysection {
+    background-color: whitesmoke;
+    text-justify: left;
+}
+
+footer {
+    background-color: #23272a;
+}
+
+.footerlist {
+    color: white;
+}
+
+.stars {
+    background-image: url(assets/stars.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Buttons n' thangs */
+
+button {
+    border-radius: 16px;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+}
+
+hr {
+    color: #444da7;
+}
+
+a {
+    text-decoration: none;   
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+/* Flexbox Zone */
+
+.flexcontainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    
+}
+
+.flexitem {
+    flex-basis: auto;
+}
+
